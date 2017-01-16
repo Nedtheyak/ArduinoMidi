@@ -10,12 +10,12 @@ int pinRead;
 char pinAssignments[16] ={
   'A11','A10','A2','A3','A4','A5','A6','A7','A8','A9','A1','A0'};
 byte PadNote[16] = {
-  60,64};         // MIDI notes from 0 to 127 (Mid C = 60)
+  60};         // MIDI notes from 0 to 127 (Mid C = 60)
 int PadCutOff[16] = 
 {
-  25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25};           // Minimum Analog value to cause a drum hit
+  180,180,180,180,180,180,180,180,180,180,180,180,180,180,180,180};           // Minimum Analog value to cause a drum hit
 int MaxPlayTime[16] = {
-  90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90};               // Cycles before a 2nd hit is allowed
+  200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200};               // Cycles before a 2nd hit is allowed
 #define  midichannel 1;                              // MIDI channel from 0 to 15 (+1 in "real world")
 boolean VelocityFlag  = false;                           // Velocity ON (true) or OFF (false)
 
