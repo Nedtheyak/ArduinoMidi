@@ -1,5 +1,5 @@
 const int PIEZO_PIN = A0; // Piezo output
-int delayTime = 15;
+int delayTime = 5;
 
 void setup() 
 {
